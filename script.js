@@ -5,7 +5,7 @@ const translations = {
     pfiap: "FIAP Portfolio",
     mfiap: "Master FIAP",
     distinctions_title: "FIAP Distinctions",
-    distinctions_desc: "NFIAP · AFIAP · EFIAP",
+    distinctions_desc: "Coming soon",
     biennials_title: "FIAP Biennials",
     biennials_desc: "Biennials",
     worldcup_title: "FIAP World Cup",
@@ -14,13 +14,14 @@ const translations = {
     allfolders_desc: "Complete archive",
     footer: "FIAP Cloud Collections Service 2026"
   },
+
   es: {
     title: "FIAP",
     subtitle: "Federación Internacional del Arte Fotográfico",
     pfiap: "Portfolio FIAP",
     mfiap: "Maestro FIAP",
     distinctions_title: "Distinciones FIAP",
-    distinctions_desc: "NFIAP · AFIAP · EFIAP",
+    distinctions_desc: "Próximamente",
     biennials_title: "Bienales FIAP",
     biennials_desc: "Bienales",
     worldcup_title: "Copa del Mundo FIAP",
@@ -29,13 +30,14 @@ const translations = {
     allfolders_desc: "Archivo completo",
     footer: "FIAP Cloud Collections Service 2026"
   },
+
   fr: {
     title: "FIAP",
     subtitle: "Fédération Internationale de l'Art Photographique",
     pfiap: "Portfolio FIAP",
     mfiap: "Maître FIAP",
     distinctions_title: "Distinctions FIAP",
-    distinctions_desc: "NFIAP · AFIAP · EFIAP",
+    distinctions_desc: "Bientôt disponible",
     biennials_title: "Biennales FIAP",
     biennials_desc: "Biennales",
     worldcup_title: "Coupe du Monde FIAP",
@@ -46,34 +48,38 @@ const translations = {
   }
 };
 
+// elementos
 const langButtons = document.querySelectorAll(".lang-btn");
-const translatableElements = document.querySelectorAll("[data-i18n]");
+const elements = document.querySelectorAll("[data-i18n]");
 
+// función principal
 function setLanguage(lang) {
-  const dictionary = translations[lang];
-  if (!dictionary) return;
+  const dict = translations[lang];
+  if (!dict) return;
 
   document.documentElement.lang = lang;
 
-  translatableElements.forEach((element) => {
-    const key = element.dataset.i18n;
-    if (dictionary[key]) {
-      element.textContent = dictionary[key];
+  elements.forEach(el => {
+    const key = el.dataset.i18n;
+    if (dict[key]) {
+      el.textContent = dict[key];
     }
   });
 
-  langButtons.forEach((button) => {
-    button.classList.toggle("active", button.dataset.lang === lang);
+  langButtons.forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.lang === lang);
   });
 
   localStorage.setItem("fiap_lang", lang);
 }
 
-langButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    setLanguage(button.dataset.lang);
+// eventos botones
+langButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    setLanguage(btn.dataset.lang);
   });
 });
 
-const savedLang = localStorage.getItem("fiap_lang") || "en";
-setLanguage(savedLang);
+// idioma inicial
+const saved = localStorage.getItem("fiap_lang") || "en";
+setLanguage(saved);
