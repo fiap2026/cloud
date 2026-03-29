@@ -18,9 +18,11 @@ body {
 }
 
 .page {
-  min-height: 100vh; /* 👈 clave */
+  flex: 1; /* 👈 clave */
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 20px 20px;
 }
 
 .container {
