@@ -3,13 +3,18 @@
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
   background: url("Fondo.jpg") center/cover fixed;
+  color: #1f2937;
 }
 
-html, body {
-  height: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .page {
