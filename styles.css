@@ -107,4 +107,8 @@ body {
   .grid {
     grid-template-columns: 1fr;
   }
+
+  .topbar {
+    justify-content: center; /* 👈 centra las banderas */
+  }
 }
