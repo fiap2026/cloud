@@ -108,7 +108,7 @@ body > * {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 260px));
+  grid-template-columns: repeat(3, 260px);
   gap: 20px;
   justify-content: center;
 }
