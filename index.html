@@ -7,87 +7,83 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <main class="page">
     <div class="container">
 
-      <header class="topbar">
+      <!-- LANG -->
+      <div class="topbar">
         <div class="lang-switcher">
-  <button class="lang-btn active" data-lang="en">
-    <img src="gb.png" alt="English" />
-  </button>
+          <button class="lang-btn active" data-lang="en">
+            <img src="https://flagcdn.com/w40/gb.png" />
+          </button>
+          <button class="lang-btn" data-lang="fr">
+            <img src="https://flagcdn.com/w40/fr.png" />
+          </button>
+          <button class="lang-btn" data-lang="es">
+            <img src="https://flagcdn.com/w40/es.png" />
+          </button>
+        </div>
+      </div>
 
-  <button class="lang-btn" data-lang="fr">
-    <img src="fr.png" alt="Français" />
-  </button>
-
-  <button class="lang-btn" data-lang="es">
-    <img src="es.png" alt="Español" />
-  </button>
-</div>
-      </header>
-
+      <!-- HERO -->
       <header class="hero">
-        <img src="FIAP_Logo.png" alt="FIAP Logo" class="hero-logo" />
+        <img src="FIAP_Logo.png" class="hero-logo" />
         <h1 data-i18n="title">FIAP</h1>
         <p data-i18n="subtitle">The International Federation of Photographic Art</p>
       </header>
 
+      <!-- GRID -->
       <section class="grid">
-        <a
-          class="card"
+
+        <!-- 1 -->
+        <a class="card highlight"
+          href="https://fiapnas.quickconnect.to/d/s/17cUYVNKKSYI6WJIskuI63IkhhcoeXC8/zZLQMvReYIw-aMAvs_1XoOK7bd5_BkW5-z7wAqrhNFA0"
+          target="_blank">
+          <h2 data-i18n="allfolders_title">All FIAP Folders</h2>
+          <p data-i18n="allfolders_desc">Complete archive</p>
+        </a>
+
+        <!-- 2 -->
+        <a class="card"
           href="https://fiapnas.quickconnect.to/d/s/17Mcit12P6iqBfOBLh99WetIhDxhgzNj/KJ3xZYfwgBBQaHG1ltzq9NlA4uSdtDK8-urRAXc_-Bw0"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          target="_blank">
           <h2>PFIAP</h2>
           <p data-i18n="pfiap">FIAP Portfolio</p>
         </a>
 
-        <a
-          class="card"
+        <!-- 3 -->
+        <a class="card"
           href="https://fiapnas.quickconnect.to/d/s/17Z9eEGu1Ka0PEBG6yRLJdtAqjiGzIoO/40B0qEW8vFrcBGUnErltRAxOVJYyXJXz-D7ygXjC4EQ0"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          target="_blank">
           <h2>MFIAP</h2>
           <p data-i18n="mfiap">Master FIAP</p>
         </a>
 
-        <div class="card disabled">
-          <h2 data-i18n="distinctions_title">FIAP Distinctions</h2>
-          <p data-i18n="distinctions_desc">NFIAP · AFIAP · EFIAP</p>
-        </div>
-
-        <a
-          class="card"
+        <!-- 4 -->
+        <a class="card"
           href="https://fiapnas.quickconnect.to/d/s/17ZBobEHIBeALmacqmc10EG4LdFqJ8v5/lqNYD-lFbn_ew3pvsyMHk7YkgXQ_-9Ov-br3AWgu-EQ0"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          target="_blank">
           <h2 data-i18n="biennials_title">FIAP Biennials</h2>
           <p data-i18n="biennials_desc">Biennials</p>
         </a>
 
-        <a
-          class="card"
+        <!-- 5 -->
+        <a class="card"
           href="https://fiapnas.quickconnect.to/d/s/17ZBx755GbgCrGob2A0CorJvVhvHvIFg/VHcAxC_4EAg0y9QWSMvbNl5WkAnvgTEU-sbJgVk--EQ0"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          target="_blank">
           <h2 data-i18n="worldcup_title">FIAP World Cup</h2>
           <p data-i18n="worldcup_desc">for Clubs</p>
         </a>
 
-        <a
-          class="card highlight"
-          href="https://fiapnas.quickconnect.to/d/s/17cUYVNKKSYI6WJIskuI63IkhhcoeXC8/zZLQMvReYIw-aMAvs_1XoOK7bd5_BkW5-z7wAqrhNFA0"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 data-i18n="allfolders_title">All FIAP Folders</h2>
-          <p data-i18n="allfolders_desc">Complete archive</p>
-        </a>
+        <!-- 6 -->
+        <div class="card disabled">
+          <h2 data-i18n="distinctions_title">FIAP Distinctions</h2>
+          <p data-i18n="distinctions_desc">Coming soon</p>
+        </div>
+
       </section>
+
     </div>
   </main>
 
@@ -96,5 +92,6 @@
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
