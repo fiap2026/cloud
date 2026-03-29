@@ -8,11 +8,14 @@ body {
   background: url("Fondo.jpg") center/cover fixed;
 }
 
+html, body {
+  height: 100%;
+}
+
 .page {
+  min-height: 100vh; /* 👈 clave */
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 10px 20px 40px;
+  flex-direction: column;
 }
 
 .container {
