@@ -4,12 +4,14 @@ const translations = {
     subtitle: "The International Federation of Photographic Art",
     pfiap: "FIAP Portfolio",
     mfiap: "Master FIAP",
-    distinctions_title: "FIAP Distinctions",
-    distinctions_desc: "Coming soon",
     biennials_title: "FIAP Biennials",
     biennials_desc: "Biennials",
     worldcup_title: "FIAP World Cup",
     worldcup_desc: "for Clubs",
+    news_title: "FIAP News",
+    news_desc: "News and publications",
+    distinctions_title: "FIAP Distinctions",
+    distinctions_desc: "Coming soon",
     allfolders_title: "All FIAP Folders",
     allfolders_desc: "Complete archive",
     footer: "FIAP Cloud Collections Service 2026"
@@ -20,12 +22,14 @@ const translations = {
     subtitle: "Federación Internacional del Arte Fotográfico",
     pfiap: "Portfolio FIAP",
     mfiap: "Maestro FIAP",
-    distinctions_title: "Distinciones FIAP",
-    distinctions_desc: "Próximamente",
     biennials_title: "Bienales FIAP",
     biennials_desc: "Bienales",
     worldcup_title: "Copa del Mundo FIAP",
     worldcup_desc: "para Clubes",
+    news_title: "Noticias FIAP",
+    news_desc: "Noticias y publicaciones",
+    distinctions_title: "Distinciones FIAP",
+    distinctions_desc: "Próximamente",
     allfolders_title: "Todas las Carpetas FIAP",
     allfolders_desc: "Archivo completo",
     footer: "FIAP Cloud Collections Service 2026"
@@ -36,12 +40,14 @@ const translations = {
     subtitle: "Fédération Internationale de l'Art Photographique",
     pfiap: "Portfolio FIAP",
     mfiap: "Maître FIAP",
-    distinctions_title: "Distinctions FIAP",
-    distinctions_desc: "Bientôt disponible",
     biennials_title: "Biennales FIAP",
     biennials_desc: "Biennales",
     worldcup_title: "Coupe du Monde FIAP",
     worldcup_desc: "pour Clubs",
+    news_title: "Actualités FIAP",
+    news_desc: "Actualités et publications",
+    distinctions_title: "Distinctions FIAP",
+    distinctions_desc: "Bientôt disponible",
     allfolders_title: "Tous les Dossiers FIAP",
     allfolders_desc: "Archive complète",
     footer: "FIAP Cloud Collections Service 2026"
@@ -59,14 +65,14 @@ function setLanguage(lang) {
 
   document.documentElement.lang = lang;
 
-  elements.forEach(el => {
+  elements.forEach((el) => {
     const key = el.dataset.i18n;
     if (dict[key]) {
       el.textContent = dict[key];
     }
   });
 
-  langButtons.forEach(btn => {
+  langButtons.forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.lang === lang);
   });
 
@@ -74,7 +80,7 @@ function setLanguage(lang) {
 }
 
 // eventos botones
-langButtons.forEach(btn => {
+langButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     setLanguage(btn.dataset.lang);
   });
