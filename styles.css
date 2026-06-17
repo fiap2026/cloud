@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: url("Fondo.jpg") center/cover fixed;
+  color: #1f2937;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  flex: 1; /* 👈 clave */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 20px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  text-align: center;
+}
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+}
+
+.lang-switcher {
+  display: flex;
+  gap: 8px;
+  padding: 6px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.85);
+}
+
+.lang-btn img {
+  width: 26px;
+  border-radius: 4px;
+}
+
+.lang-btn.active {
+  outline: 2px solid #1d4ed8;
+}
+
+.hero {
+  margin-bottom: 28px;
+}
+
+.hero-logo {
+  height: 70px;
+}
+
+.hero h1 {
+  color: #1d4ed8;
+  font-size: 42px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 260px);
+  gap: 22px;
+  justify-content: center;
+}
+
+.card {
+  padding: 26px;
+  border-radius: 16px;
+  background: white;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card.disabled {
+  opacity: 0.5;
+}
+
+.card.highlight {
+  border: 2px solid #1d4ed8;
+}
+
+.footer {
+  background: #1d4ed8;
+  color: white;
+  text-align: center;
+  font-size: 11px;
+  padding: 6px;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    justify-content: center; /* 👈 centra las banderas */
+  }
+}
