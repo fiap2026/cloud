@@ -23,6 +23,8 @@ const translations = {
     board_meetings_desc: "FIAP Board Meetings",
     best_of_best_title: "FIAP Best of the Best",
     best_of_best_desc: "FIAP Best of the Best",
+    liaison_officers_title: "FIAP Liaison Officers",
+    liaison_officers_desc: "FIAP Liaison Officers",
     allfolders_title: "All FIAP Folders",
     allfolders_desc: "Complete archive",
     footer: "FIAP Cloud Collections Service 2026"
@@ -52,6 +54,8 @@ const translations = {
     board_meetings_desc: "Reuniones de la Junta FIAP",
     best_of_best_title: "Lo Mejor de lo Mejor FIAP",
     best_of_best_desc: "Lo Mejor de lo Mejor FIAP",
+    liaison_officers_title: "Oficiales de Enlace FIAP",
+    liaison_officers_desc: "Oficiales de Enlace FIAP",
     allfolders_title: "Todas las Carpetas FIAP",
     allfolders_desc: "Archivo completo",
     footer: "FIAP Cloud Collections Service 2026"
@@ -81,6 +85,8 @@ const translations = {
     board_meetings_desc: "Réunions du Conseil FIAP",
     best_of_best_title: "Le Meilleur du Meilleur FIAP",
     best_of_best_desc: "Le Meilleur du Meilleur FIAP",
+    liaison_officers_title: "Officiers de Liaison FIAP",
+    liaison_officers_desc: "Officiers de Liaison FIAP",
     allfolders_title: "Tous les Dossiers FIAP",
     allfolders_desc: "Archive complète",
     footer: "FIAP Cloud Collections Service 2026"
