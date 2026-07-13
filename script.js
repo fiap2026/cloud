@@ -2,6 +2,7 @@ const translations = {
   en: {
     title: "FIAP",
     subtitle: "The International Federation of Photographic Art",
+    menu_note: "Select any button to open the documentation. Use your browser's Back button to return to this main menu.",
     pfiap: "FIAP Portfolio",
     mfiap: "Master FIAP",
     biennials_title: "FIAP Biennials",
@@ -30,6 +31,7 @@ const translations = {
   es: {
     title: "FIAP",
     subtitle: "Federación Internacional del Arte Fotográfico",
+    menu_note: "Pulsa cualquier botón para acceder a la documentación. Usa la flecha Atrás del navegador para volver a este menú principal.",
     pfiap: "Portfolio FIAP",
     mfiap: "Maestro FIAP",
     biennials_title: "Bienales FIAP",
@@ -58,6 +60,7 @@ const translations = {
   fr: {
     title: "FIAP",
     subtitle: "Fédération Internationale de l'Art Photographique",
+    menu_note: "Sélectionnez un bouton pour accéder à la documentation. Utilisez le bouton Retour du navigateur pour revenir à ce menu principal.",
     pfiap: "Portfolio FIAP",
     mfiap: "Maître FIAP",
     biennials_title: "Biennales FIAP",

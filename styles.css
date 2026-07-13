@@ -53,6 +53,18 @@ body {
   outline: 2px solid #1d4ed8;
 }
 
+.menu-note {
+  display: inline-block;
+  max-width: 760px;
+  margin: 0 0 18px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.85);
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
 .hero {
   margin-bottom: 28px;
 }
@@ -110,5 +122,10 @@ body {
 
   .topbar {
     justify-content: center; /* 👈 centra las banderas */
+  }
+
+  .menu-note {
+    display: block;
+    font-size: 13px;
   }
 }
