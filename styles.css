@@ -26,13 +26,14 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 1100px;
   text-align: center;
 }
 
 .topbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin-bottom: 6px;
 }
 
@@ -118,10 +119,6 @@ body {
 @media (max-width: 700px) {
   .grid {
     grid-template-columns: 1fr;
-  }
-
-  .topbar {
-    justify-content: center; /* 👈 centra las banderas */
   }
 
   .menu-note {
