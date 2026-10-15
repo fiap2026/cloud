@@ -1,7 +1,7 @@
 const translations = {
   en: {
-    important_events_title: "FIAP Important Events",
-    important_events_desc: "FIAP Important Events",
+    important_events_title: "FIAP Events",
+    important_events_desc: "FIAP Events",
     history_title: "FIAP History",
     history_desc: "FIAP History",
     title: "FIAP",
@@ -37,8 +37,8 @@ const translations = {
   },
 
   es: {
-    important_events_title: "Eventos importantes de la FIAP",
-    important_events_desc: "Eventos importantes de la FIAP",
+    important_events_title: "Eventos de la FIAP",
+    important_events_desc: "Eventos de la FIAP",
     history_title: "Historia de la FIAP",
     history_desc: "Historia de la FIAP",
     title: "FIAP",
@@ -74,8 +74,8 @@ const translations = {
   },
 
   fr: {
-    important_events_title: "Événements importants de la FIAP",
-    important_events_desc: "Événements importants de la FIAP",
+    important_events_title: "Événements de la FIAP",
+    important_events_desc: "Événements de la FIAP",
     history_title: "Histoire de la FIAP",
     history_desc: "Histoire de la FIAP",
     title: "FIAP",
