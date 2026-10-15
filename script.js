@@ -1,5 +1,7 @@
 const translations = {
   en: {
+    history_title: "FIAP History",
+    history_desc: "FIAP History",
     title: "FIAP",
     subtitle: "The International Federation of Photographic Art",
     menu_note: "Select any button to open the documentation. Use your browser's Back button to return to this main menu.",
@@ -33,6 +35,8 @@ const translations = {
   },
 
   es: {
+    history_title: "Historia de la FIAP",
+    history_desc: "Historia de la FIAP",
     title: "FIAP",
     subtitle: "Federación Internacional del Arte Fotográfico",
     menu_note: "Pulsa cualquier botón para acceder a la documentación. Usa la flecha Atrás del navegador para volver a este menú principal.",
@@ -66,6 +70,8 @@ const translations = {
   },
 
   fr: {
+    history_title: "Histoire de la FIAP",
+    history_desc: "Histoire de la FIAP",
     title: "FIAP",
     subtitle: "Fédération Internationale de l'Art Photographique",
     menu_note: "Sélectionnez un bouton pour accéder à la documentation. Utilisez le bouton Retour du navigateur pour revenir à ce menu principal.",
