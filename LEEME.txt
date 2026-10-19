@@ -1,0 +1,47 @@
+FIAP COLLECTIONS SERVICE — PRUEBA NAS 01
+
+1. Guarda este ZIP en V2 y descomprímelo.
+2. Sube los CINCO archivos de su interior directamente a:
+   /volume1/docker/fiap-collections-test
+   compose.yaml y Dockerfile deben quedar en esa carpeta, no en otra anidada.
+3. Container Manager > Project/Proyecto > Create/Crear.
+   Nombre: fiap-collections-test
+   Ruta: /docker/fiap-collections-test
+   Origen: usar el archivo compose.yaml existente (nombre de opción según DSM).
+   Construir e iniciar el proyecto.
+4. Se necesita Internet desde el NAS para descargar Python, Pillow y PyMuPDF.
+5. Desde la misma red local del NAS abre:
+   http://192.168.0.152:8088/health
+   Debe responder con ok: true.
+   Visor local: http://192.168.0.152:8088/
+   Esa IP es la registrada anteriormente: si cambió, usa la IP LAN actual.
+6. No abras el puerto 8088 en el router. La publicación HTTPS y la conexión
+   desde GitHub se preparan después de verificar el servicio local.
+
+DATOS Y PERMISOS
+Solo se monta /volume1/FIAP_PUBLIC/All FIAP Folders, como solo lectura.
+Se ejecuta con UID/GID 65534. Las ACL del NAS deben permitirle leer y recorrer
+las carpetas públicas. Si falla con 403 o salud no accesible, revisaremos las
+ACL. No cambies todos los permisos ni uses modo privilegiado para resolverlo.
+No se necesita contraseña DSM en GitHub ni en estos archivos.
+
+ALCANCE
+Lista una carpeta a la vez, con páginas de 100 elementos. No indexa los 100 TB.
+Genera JPEG de máximo 1600 px para imágenes y páginas PDF.
+No hay ruta de descarga de archivos originales. Las vistas sí pueden guardarse.
+Otros documentos se listan pero aún no tienen vista previa.
+Límites: 200 MB/archivo; 50 millones de píxeles por imagen.
+Servicio de prueba, una solicitud a la vez; pendiente revisión de carga y
+publicación HTTPS antes de acceso público. No reemplaza la web actual.
+Si 8088 está ocupado, ajustar solo el primer puerto del mapeo en compose.yaml.
+Para detener la prueba: Container Manager > Proyecto > Detener.
+
+FUENTES TÉCNICAS
+https://docs.docker.com/reference/compose-file/services/
+https://pymupdf.readthedocs.io/en/latest/page.html
+
+Se verifican sintaxis y rutas en el entorno de preparación. El montaje real,
+las ACL, la construcción Docker y el acceso en el NAS requieren prueba allí.
+PyMuPDF usa licencia AGPL o comercial; revisar sus términos antes de distribuir
+una versión definitiva. El entorno Docker instala las versiones disponibles
+al construir esta prueba; fijar versiones tras validación para producción.
